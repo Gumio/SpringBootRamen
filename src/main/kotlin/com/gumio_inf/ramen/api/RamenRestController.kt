@@ -23,7 +23,7 @@ class RamenRestController {
 
     // 全取得
     @RequestMapping(method = arrayOf(RequestMethod.GET))
-    fun getRamens(@PageableDefault pageable: Pageable): Page<Ramen>? = ramenService?.findAllPage(pageable)
+    fun getRamens(): List<Ramen>? = ramenService?.findAll()
 
     // 1件の取得
     @RequestMapping(value = "{id}", method = arrayOf(RequestMethod.GET))
