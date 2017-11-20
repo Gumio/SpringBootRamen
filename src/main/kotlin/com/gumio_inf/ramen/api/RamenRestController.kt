@@ -18,6 +18,7 @@ import org.springframework.web.util.UriComponentsBuilder
 @RestController
 @RequestMapping("api/ramens")
 class RamenRestController {
+
     // 注入
     @Autowired val ramenService: RamenService? = null
 
